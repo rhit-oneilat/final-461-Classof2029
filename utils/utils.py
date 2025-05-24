@@ -381,7 +381,9 @@ def save_gif(frames, fps, filename):
 def get_image(filename, width=None, height=None, crop=False):
     im = Image.open(filename)
 
-    # Drop alpha channel by converting to RGB
+    # Drop alpha channel by converting to RGB (added by William Valentine)
+    # If we didn't do this, the alpha channel would cause the model to
+    # crash due to it expecting only three channels.
     if im.mode == 'RGBA' or im.mode == 'LA':
         im = im.convert('RGB')
 
