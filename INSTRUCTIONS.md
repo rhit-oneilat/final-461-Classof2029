@@ -83,4 +83,4 @@ Scroll down until you see the line which reads `from huggingface_hub import cach
 3. The last block of code starts a **web server** which should run on port 5001, specifically the web server should be accessible at [text](http://gebru.csse.rose-hulman.edu:5001/). Please **note** that this might not be the url that works for you depending on which server you run this code or if you run on your personal computer.
  
 ### Outputs
-Our GIF results can be found in testing_data/output/gifs
+Our GIF results can be found in **testing_data/output/gifs**
